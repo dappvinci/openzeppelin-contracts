@@ -2,20 +2,35 @@
 
 pragma solidity ^0.6.0;
 
+
+//import "../../GSN/Context.sol";
+//import "./IERC721.sol";
+//import "./IERC721Metadata.sol";
+//import "./IERC721Enumerable.sol";
+//import "./IERC721Receiver.sol";
+//import "../../introspection/ERC165.sol";
+//import "../../math/SafeMath.sol";
+//import "../../utils/Address.sol";
+//import "../../utils/EnumerableSet.sol";
+//import "../../utils/EnumerableMap.sol";
+//import "../../utils/Strings.sol";
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/GSN/Context.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Receiver.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Metadata.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Enumerable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Receiver.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/introspection/ERC165.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/EnumerableSet.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/EnumerableMap.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
+
 /**
-import "../../GSN/Context.sol";
-import "./IERC721.sol";
-import "./IERC721Metadata.sol";
-import "./IERC721Enumerable.sol";
-import "./IERC721Receiver.sol";
-import "../../introspection/ERC165.sol";
-import "../../math/SafeMath.sol";
-import "../../utils/Address.sol";
-import "../../utils/EnumerableSet.sol";
-import "../../utils/EnumerableMap.sol";
-import "../../utils/Strings.sol";
-
-
  * @title ERC721 Non-Fungible Token Standard basic implementation
  * @dev see https://eips.ethereum.org/EIPS/eip-721
  */
