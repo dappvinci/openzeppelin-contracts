@@ -2,6 +2,7 @@
 
 pragma solidity ^0.6.0;
 
+/**
 import "../../GSN/Context.sol";
 import "./IERC721.sol";
 import "./IERC721Metadata.sol";
@@ -14,7 +15,7 @@ import "../../utils/EnumerableSet.sol";
 import "../../utils/EnumerableMap.sol";
 import "../../utils/Strings.sol";
 
-/**
+
  * @title ERC721 Non-Fungible Token Standard basic implementation
  * @dev see https://eips.ethereum.org/EIPS/eip-721
  */
